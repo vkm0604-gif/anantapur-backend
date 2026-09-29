@@ -20,4 +20,5 @@ app.post('/fill', (req, res) => {
 
 app.get('/', (req, res) => res.send('ANANTAPUR XPRESS BHARAT BACKEND LIVE 🇮🇳'));
 
-app.listen(3000, () => console.log('live'));
+const PORT = process.env.PORT || 3000
+app.listen(PORT, '0.0.0.0', () => console.log('live'));
